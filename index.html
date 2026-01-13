@@ -42,17 +42,21 @@
   <section class="section contact" id="contact">
     <h2>Book a Consultation</h2>
 
-<form id="consultation-form" action="https://formspree.io/f/mykkynan" method="POST">
-  
-  <input type="text" name="name" placeholder="Your Name" required>
-  
-  <input type="email" name="email" placeholder="Your Email" required>
-  
-  <textarea name="message" placeholder="Tell us about your project" required></textarea>
-  
+<!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/mykkynan"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
   <button type="submit">Send</button>
-
-  <p id="form-status"></p>
 </form>
 
   </section>

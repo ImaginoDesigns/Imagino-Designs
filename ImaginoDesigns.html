@@ -42,13 +42,19 @@
   <section class="section contact" id="contact">
     <h2>Book a Consultation</h2>
 
-    <form id="contact-form">
-      <input type="text" name="name" placeholder="Your full name" required />
-      <input type="email" name="email" placeholder="Your email address" required />
-      <input type="text" name="time" placeholder="Preferred time to call" required />
-      <textarea name="reason" placeholder="What can we help you with?" required></textarea>
-      <button type="submit">Send Request</button>
-    </form>
+<form id="consultation-form" action="https://formspree.io/f/abcdwxyz" method="POST">
+  
+  <input type="text" name="name" placeholder="Your Name" required>
+  
+  <input type="email" name="email" placeholder="Your Email" required>
+  
+  <textarea name="message" placeholder="Tell us about your project" required></textarea>
+  
+  <button type="submit">Send</button>
+
+  <p id="form-status"></p>
+</form>
+
   </section>
 
   <!-- FOOTER -->
